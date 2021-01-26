@@ -1,0 +1,30 @@
+/*
+ * Device tree overlay for bu21026 on i2c.1
+ */
+/dts-v1/;
+/plugin/;
+
+/ {
+
+	compatible = "brcm,bcm2835", "brcm,bcm2836", "brcm,bcm2708", "brcm,bcm2709";
+
+	fragment@0 {
+		target = <&i2c1>;
+		__overlay__ {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			bu21026: bu21026@48 {
+				compatible = "i2c,bu21026";
+				reg = <0x48>;
+				interrupt-parent = <&gpio>;
+				interrupts = <39 2>;
+				rohm,x-plate-ohms = <680>;
+				touchscreen-size-x = <800>;
+				touchscreen-size-y = <480>;
+				touchscreen-inverted-x;
+				touchscreen-max-pressure = <4095>;
+				status = "okay";
+			};
+		};
+	};
+};
