@@ -14,7 +14,7 @@ if [ -z "$1" ]; then
 fi
 
 # build overlay dtbo
-if dtc -@ -b 0 -I dts -O dtb -o bu21026-ts.dtbo bu21026-ts.dts ; then
+if dtc -@ -b 0 -I dts -O dtb -o bu21026-ts.dtbo dts/bu21026-ts.dts ; then
 	sudo chown root:root bu21026-ts.dtbo
 	sudo mv bu21026-ts.dtbo /boot/overlays
 else
