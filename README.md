@@ -4,13 +4,13 @@
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](http://www.gnu.org/licenses/lgpl-3.0)
 
 This repository contains Linux drivers for LCD touch scree driver
-implemented on OPEN-EYES-II devices from OPEN-EYES S.r.l.
+implemented on OPEN-EYES-RPI devices from OPEN-EYES S.r.l.
 
 This driver is licensed under the Gnu Public License.
 
 This driver is tested under the Linux 5.X kernels.
 
-For more information about OPEN-EYES-II devices visit http://www.open-eyes.it
+For more information about OPEN-EYES-RPI devices visit http://www.open-eyes.it
 
 The bu21026-ts Linux driver dialog with the ROHM chipset:
 
